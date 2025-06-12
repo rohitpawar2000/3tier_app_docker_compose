@@ -1,0 +1,119 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f2f5; /* Optional: subtle background */
+}
+
+.container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px;
+  max-width: 400px;
+  width: 100%;
+  /* Remove margin and centering flex from .container */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #f5f6fa;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #e0e0e0;
+  transition: border 0.2s;
+}
+
+.input-group:focus-within {
+  border: 1.5px solid #646cff;
+}
+
+.input-icon {
+  font-size: 1.2em;
+  color: #646cff;
+  margin-right: 10px;
+}
+
+.input-group input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 1em;
+  width: 100%;
+  padding: 6px 0;
+}
+
+.submit-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #646cff 60%, #61dafb 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #4b50c7 60%, #21a1f3 100%);
+}
+
+.fetch-btn {
+  background: #fff;
+  color: #646cff;
+  border: 2px solid #646cff;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.fetch-btn:hover:enabled {
+  background: #646cff;
+  color: #fff;
+}
+
+.fetch-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background: #f5f6fa;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.98em;
+}
+
+.user-table th, .user-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.user-table th {
+  background: #646cff;
+  color: #fff;
+  font-weight: 600;
+}
+
+.user-table tr:last-child td {
+  border-bottom: none;
+}
